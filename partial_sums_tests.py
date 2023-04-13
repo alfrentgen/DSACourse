@@ -1,9 +1,6 @@
 from partial_sums import find_sum_in_sorted3
-from random import randint, seed
-from decimal import Decimal
-
-def generate_random_int_array(length):
-    return [randint(-(2**16), 2**16 - 1) for i in range(length)]
+from random import seed
+from common_utils import generate_random_int_array
 
 def generate_all_sums(arr):
     win_size = len(arr)
